@@ -17,7 +17,7 @@ namespace WebApi.Controllers
         // The Web API will only accept tokens
         // 1) for users, and 
         // 2) having the scope for this API
-        static readonly string[] scopeRequiredByApi = new string[] { "crud.all" };
+        static readonly string[] scopeRequiredByApi = new string[] { "<exposed scope name>" };
 
         [HttpGet(Name ="GetProfile")]
         public IActionResult GetProfile([FromQuery] string firstName)
